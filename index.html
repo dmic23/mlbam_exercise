@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MLBAM Exercise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body onload="getGames()">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="main-container">
+        	
+        	<header class="main-header text-center">
+        		<h1 class="header-title">MLB Schedule</h1>
+                <h2 id="game-date" class="header-date"></h2>
+                <nav tabindex="0">
+                    <a class="float-left nav-date" href="#" id="prev-date"></a>
+                    <a class="float-right nav-date" href="#" id="next-date"></a>
+                </nav>
+        	</header>
+        	<section class="games-section">
+                <div id="games" class="games"></div>
+        	</section>
+        </div>
+		<script src="js/main.js"></script>
+    </body>
+</html>
